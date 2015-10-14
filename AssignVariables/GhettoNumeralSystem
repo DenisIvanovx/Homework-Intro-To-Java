@@ -1,0 +1,55 @@
+import java.util.Scanner;
+
+/**
+ * Created by express on 12-Oct-15.
+ */
+public class GhettoNumeralSystem {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int[] arr = new int[n];
+
+        for(int i = 0; i < n ; i++) {
+            arr[i] = scan.nextInt();
+        }
+
+        StringBuilder sb = new StringBuilder();
+        String[] array = {
+                "Gee",
+                "Bro",
+                "Zuz",
+                "Ma",
+                "Duh",
+                "Yo",
+                "Dis",
+                "Hood",
+                "Jam",
+                "Mack"
+        };
+
+        for (int c : arr) {
+            if (c == 9) {
+                sb.append(array[9]);
+            } else if (c == 8) {
+                sb.append(array[8]);
+            } else if (c == 7) {
+                sb.append(array[7]);
+            } else if (c == 6) {
+                sb.append(array[6]);
+            } else if (c == 5) {
+                sb.append(array[5]);
+            } else if (c == 4) {
+                sb.append(array[4]);
+            } else if (c == 3) {
+                sb.append(array[3]);
+            } else if (c == 2) {
+                sb.append(array[2]);
+            } else if (c == 1) {
+                sb.append(array[1]);
+            } else if (c == 0) {
+                sb.append(array[0]);
+            }
+        }
+        System.out.println(sb);
+    }
+}
