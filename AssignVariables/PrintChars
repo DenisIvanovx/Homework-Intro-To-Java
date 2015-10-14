@@ -1,0 +1,12 @@
+import java.text.MessageFormat;
+
+/**
+ * Created by express on 12-Oct-15.
+ */
+public class PrintChars {
+    public static void main(String[] args) {
+        for (char c = 'a'; c <= 'z'; c++) {
+            System.out.print(MessageFormat.format("{0} ", c));
+        }
+    }
+}
