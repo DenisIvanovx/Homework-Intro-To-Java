@@ -1,0 +1,21 @@
+/**
+ * Created by express on 12-Oct-15.
+ */
+public class AssignVariables {
+    public static void main(String[] args) {
+        byte var1 = 127;
+
+        // with 32768 is expecting int not short.
+        short var2 = 32767;
+
+        String var3 = "Palo Alto, CA";
+        int var4 = 2000000000;
+        long var5 = 919827112351L;
+        char var6 = 'c';
+        boolean isHomework = false;
+        float var7 = 0.5f;
+        double var8 = 0.1234567891011;
+
+        System.out.println(var3);
+    }
+}
